@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -9,12 +9,14 @@
     tools:context=".MenuActivity">
 
     <ImageView
+        android:contentDescription="@string/txt_img_description"
         android:layout_width="241dp"
         android:layout_height="wrap_content"
         android:scaleType="centerInside"
         android:src="@drawable/title"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,80 +33,85 @@
         android:layout_height="wrap_content"
         android:columnCount="2"
         android:layout_marginTop="20dp"
-        android:paddingHorizontal="50dp" >
+        android:paddingHorizontal="50dp">
 
         <Button
-            android:id="@+id/button_cold_drinks"
+            android:id="@+id/btn_cold_drinks"
             android:text="@string/cold_drinks"
             android:textColor="@color/dusty_white"
             android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
-            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_marginEnd="@dimen/menu_buttons_margin"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            android:paddingVertical="@dimen/menu_buttons_padding_v"/>
+            android:paddingVertical="@dimen/menu_buttons_padding_vertical"
+            />
 
         <Button
-            android:id="@+id/button_hot_drinks"
+            android:id="@+id/btn_hot_drinks"
             android:text="@string/hot_drinks"
-            android:textColor="@color/dusty_white"
-            android:background="@drawable/first_gradient"
-            android:paddingHorizontal="@dimen/menu_buttons_padding"
-            android:layout_marginLeft="@dimen/menu_buttons_margin"
-            android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"
-            android:textSize="@dimen/menu_buttons_text"
-            android:paddingVertical="@dimen/menu_buttons_padding_v"/>
-
-        <Button
-            android:id="@+id/button_sweets"
-            android:text="@string/sweets"
             android:textColor="@color/dusty_white"
             android:background="@drawable/second_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
-            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_marginStart="@dimen/menu_buttons_margin"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            android:paddingVertical="@dimen/menu_buttons_padding_v"/>
+            android:paddingVertical="@dimen/menu_buttons_padding_vertical"
+            />
 
         <Button
-            android:id="@+id/button_salties"
+            android:id="@+id/btn_sweets"
+            android:text="@string/sweets"
+            android:textColor="@color/dusty_white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_padding"
+            android:layout_marginEnd="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_padding_vertical"
+            />
+
+        <Button
+            android:id="@+id/btn_salties"
             android:text="@string/salties"
             android:textColor="@color/dusty_white"
             android:background="@drawable/second_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
-            android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:layout_marginStart="@dimen/menu_buttons_margin"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            android:paddingVertical="@dimen/menu_buttons_padding_v"/>
+            android:paddingVertical="@dimen/menu_buttons_padding_vertical"
+            />
 
         <Button
-            android:id="@+id/button_combos"
+            android:id="@+id/btn_combos"
             android:text="@string/combos"
             android:textColor="@color/dusty_white"
-            android:background="@drawable/third_gradient"
+            android:background="@drawable/first_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
-            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_marginEnd="@dimen/menu_buttons_margin"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            android:paddingVertical="@dimen/menu_buttons_padding_v"/>
+            android:paddingVertical="@dimen/menu_buttons_padding_vertical"
+            />
 
         <Button
-            android:id="@+id/button_custom"
-            android:text="@string/customizable"
+            android:id="@+id/btn_costumazible"
+            android:text="@string/costumazible"
             android:textColor="@color/dusty_white"
-            android:background="@drawable/third_gradient"
+            android:background="@drawable/second_gradient"
             android:paddingHorizontal="@dimen/menu_buttons_padding"
-            android:layout_marginLeft="@dimen/menu_buttons_margin"
+            android:layout_marginStart="@dimen/menu_buttons_margin"
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            android:paddingVertical="@dimen/menu_buttons_padding_v"/>
-
+            android:paddingVertical="@dimen/menu_buttons_padding_vertical"
+            />
     </GridLayout>
 
 </LinearLayout>
